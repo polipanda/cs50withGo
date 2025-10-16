@@ -155,7 +155,7 @@ The Tideman voting method (also known as “ranked pairs”) is a ranked-choice 
 #### Background
 Generally speaking, the Tideman method works by constructing a “graph” of candidates, where an arrow (i.e. edge) from candidate A to candidate B indicates that candidate A wins against candidate B in a head-to-head matchup. The graph for the above election, then, would look like the below.
 
-![tideman_graph.png](tideman_graph.png)
+![tideman_graph.png](markdown_images/tideman_graph.png)
 
 The arrow from Alice to Bob means that more voters prefer Alice to Bob (5 prefer Alice, 4 prefer Bob). Likewise, the other arrows mean that more voters prefer Alice to Charlie, and more voters prefer Charlie to Bob.
 
@@ -163,7 +163,7 @@ Looking at this graph, the Tideman method says the winner of the election should
 
 It’s possible, however, that when the arrows are drawn, there is no Condorcet winner. Consider the below ballots.
 
-![tideman_inconclusive_graph.png](tideman_inconclusive_graph.png)
+![tideman_inconclusive_graph.png](markdown_images/tideman_inconclusive_graph.png)
 
 Between Alice and Bob, Alice is preferred over Bob by a 7-2 margin. Between Bob and Charlie, Bob is preferred over Charlie by a 5-4 margin. But between Charlie and Alice, Charlie is preferred over Alice by a 6-3 margin. If we draw out the graph, there is no source! We have a cycle of candidates, where Alice beats Bob who beats Charlie who beats Alice (much like a game of rock-paper-scissors). In this case, it looks like there’s no way to pick a winner.
 
@@ -175,7 +175,7 @@ Next up is Bob’s 5-4 victory over Charlie. But notice: if we were to add an ar
 
 This step-by-step process is shown below, with the final graph at right.
 
-![tideman_graph_progression.png](tideman_graph_progression.png)
+![tideman_graph_progression.png](markdown_images/tideman_graph_progression.png)
 
 Based on the resulting graph, Charlie is the source (there’s no arrow pointing towards Charlie), so Charlie is declared the winner of this election.
 
