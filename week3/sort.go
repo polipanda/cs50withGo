@@ -10,7 +10,6 @@ const BUBBLE sortName = "bubble sortFile"
 const MERGE sortName = "merge sortFile"
 const SELECTION sortName = "selection sortFile"
 
-// how to run the sortFile files and benchmark them
 func returnAnswer(sort sortFile) sortName {
 	switch sort {
 	case SORT1:

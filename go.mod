@@ -1,3 +1,3 @@
-module cs50go
+module cs50withGo
 
 go 1.24.6

@@ -7,7 +7,9 @@ import (
 
 func TestDetermineReadingLevel(t *testing.T) {
 	for _, scenario := range readabilityScenarios() {
+		fmt.Println(scenario)
 		result := determineReadingLevel(scenario.text)
+		fmt.Println(result)
 		if result != scenario.level {
 			t.Errorf("expected %s, got %s", scenario.level, result)
 		}
