@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const buttons = document.querySelectorAll('.part1-button')
+                buttons.forEach(button => {
+                    button.addEventListener('click', e => {
+                        const p = document.querySelector('.part1-result')
+                        const buttonText = e.target.innerHTML
+                        if (buttonText === 'United Kingdom') {
+                            e.target.style.backgroundColor = 'green'
+                            p.innerHTML = 'Correct'
+                        } else {
+                            e.target.style.backgroundColor = 'red'
+                            p.innerHTML = 'Incorrect'
+                        }
+                    })
+                })
+
+                const button = document.querySelector('.part2-button')
+                button.addEventListener('click', e => {
+                    const answer = document.querySelector('.part2-input')
+                    const result = document.querySelector('.part2-result')
+                    console.log(answer)
+                    if (answer.value === 'Ottawa') {
+                        answer.style.color = 'green'
+                        result.innerHTML = 'Correct'
+                    } else {
+                        answer.style.color = 'red'
+                        result.innerHTML = 'Incorrect'
+                    }
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>Which of the following countries was not part of the EUs original 6 members?</h3>
+                <button class="part1-button">Netherlands</button>
+                <button class="part1-button">United Kingdom</button>
+                <button class="part1-button">Luxembourg</button>
+                <button class="part1-button">Italy</button>
+                <p class="part1-result"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>What is the capital city of Canada?</h3>
+                <input class="part2-input" type="text" placeholder="city">
+                <button class="part2-button">Check Answer</button>
+                <p class="part2-result"></p>
+            </div>
+        </div>
+    </body>
+</html>

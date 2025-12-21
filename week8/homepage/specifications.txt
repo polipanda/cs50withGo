@@ -1,0 +1,29 @@
+1. Page must have at least 4 .html pages (including index.html)
+2. Can get from any given .html page to any other
+3. Use ten distinct HTML tags besides html, head, body, title. Duplicates only count as one.
+4. Add one or more Bootstrap feature
+5. Create at least one stylesheet (styles.css) and use at least 5 different CSS selectors, with at least 5 CSS properties.
+6. Add one or more javascript feature.
+7. Site is interactable on both desktop and mobile.
+
+10 HTML tags used:
+<header>
+<a>
+<br>
+<hr>
+<div>
+<select>
+<option>
+<h5>
+<img>
+<button>
+<image>
+etc...
+
+5 CSS properties used:
+width
+height
+display
+gap
+flex / flex-wrap / flex-direction
+etc...
