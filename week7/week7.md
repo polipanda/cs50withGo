@@ -1,5 +1,5 @@
 ## Week 7 Problems
-https://cs50.harvard.edu/x/psets/6/
+https://cs50.harvard.edu/x/psets/7/
 
 Complete the following exercises using SQL.
 
